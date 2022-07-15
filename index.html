@@ -1,62 +1,55 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <link href='css/style.css' rel='stylesheet' type='text/css'>
-        
-        <title>Mi Primer Repositorio</title>
-        
+        <title>Bootstrap Starter Page</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}"/>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"/>
     </head>
-
     <body>
-        <div class="container">
-            <div class="row">
-            <h1 class="menu-title">Menú de la Casa</h1>
-                
-                <div class="col-lg-4">
-                    <div class="item">
-                        <div class="item-title" id="title-uno">
-                        <h3>Mondongo</h3>
-                        </div>
-                        <div>
-                            <p>
-                                Sabroso y tradicional. Así describo este delicioso plato heredado de la gastronomía española. Este plato se prepara con la panza de la vaca tanto en España como en los países latinoamericanos. La preparación es básicamente la misma, solo que algunas personas no le agregan garbanzos, chorizo español o patitas de cerdo; eso es cuestión de gustos de cada familia. 
-                            </p>
-                        </div>
+        <header>
+            <nav id="header-nav" class="navbar navbar-default navbar-expand-lg visible-xs">
+                <div class="container-fluid">
+                    <div class="navbar-brand ">
+                        <h1>Food, LLC</h1> 
                     </div>
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                 </div>
-                <div class="col-lg-4">
-                    <div class="item">
-                        <div class="item-title" id="title-dos">
-                        <h3>Arepa</h3>
+            </nav>
+            <div id="navbarNavDropdown" class="navbar-collapse collapse visible-xs">
+                <ul class="nav navbar-nav navbar-center">
+                    <li class="nav-item">Chicken</li>
+                    <li class="nav-item">Beef</li>
+                    <li class="nav-item">Sushi</li>
+                </ul>
+            </div>
+            <div class="container-fluid">
+                <nav id="main-title-nav">
+                    <h2>Our Menu</h2> 
+                </nav>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="item">
+                            <h2 class="menu-title">Chicken</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. </p>
+
+                            <p>Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. </p>
+
+                            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. </p>
+
+                            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa. </p>
+
+                            <p>Cras metus. Sed aliquet risus a tortor. Integer id quam. Morbi mi. Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet, augue. Proin sodales libero eget ante. Nulla quam. Aenean laoreet. Vestibulum nisi lectus, commodo ac, facilisis ac, ultricies eu, pede. Ut orci risus, accumsan porttitor, cursus quis, aliquet eget, justo. Sed pretium blandit orci. Ut eu diam at pede suscipit sodales. </p>
                         </div>
-                        <div>
-                            <p>
-                                La arepa, en algunos casos conocida como tostada, es la insignia del venezolano con una versatilidad que puede ir desde el desayuno hasta la cena, puede servir de acompañante, de principal y hasta de pasapalo según el formato o el relleno que se utilice para ella. La industrialización nos regaló el maíz precocido.
-                            </p>
-                        </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="item">
-                        <div class="item-title" id="title-tres">
-                        <h3>Caldo</h3>
-                        </div>
-                        <div>
-                            <p>
-                                Durante mediados del otoño y principios del invierno, el menú cambia dramáticamente en muchos países. El organismo necesita alimentos muy vigorizantes para mantener la temperatura adecuada. Por este motivo en RecetaGratis te sugerimos una deliciosa receta se sopa de leche venezolana energética, ideal para la temporada fría: la pisca andina con huevo.
-                                Aunque Venezuela pertenece a una región tropical y no posee 4 estaciones, existe una gran variedad de climas dentro del país, durante todo el año: templados, muy fríos y muy calientes. Por esta razón la gastronomía venezolana es muy variada, tanto como su cultura. Cada lugar determina su dieta según la geografía, la tradición y el clima. La pisco andino es un plato típico de las zonas frías de Venezuela: Los Andes. En Táchira, Mérida y Trujillo, se consume esta sopa de huevo con leche en el desayuno, incluso en algunas cenas. Durante las mañanas andinas las temperaturas son bastante bajas, sobre todo en la cordillera. Por esta razón la gente comienza el día con esta sopa de leche, para mantener el calor corporal antes de salir a la jornada diaria.
-                                La pisca andina de Mérida (Venezuela) es una sopa energética y económica, los ingredientes que la conforman son: caldo de vegetales o carne, papas, leche, queso, y cilantro. El queso que se utiliza es queso ahumado andino, el cual no se consigue fuera de la región de Los Andes, sin embargo, cualquier queso semiduro sirve y también quedará muy rica.
-                                El sabor de este plato se caracteriza por su suavidad, delicadeza y marcado acento a cilantro. Sin embargo, como es característico en la gastronomía venezolana, existen muchas variantes de pisca andina merideña porque cada hogar y cada región poseen su toque distintivo. Algunos le agregan carne asada en trocitos, pueden ser las sobras del día anterior, pues la carne preparada así se asemeja al sabor del queso ahumado. Otros le ponen huevo, otros no. Algunos acompañan esta sopa andina venezolana con galletas de soda y otros con arepas andinas. Por eso se dice por aquí que… ¡En la variedad está el gusto!
-                            </p>
-                        </div>
-                  </div>
+                     </div>
                 </div>
             </div>
-        </div>
+        </header>
     </body>
-
 </html>
